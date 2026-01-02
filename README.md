@@ -106,6 +106,16 @@ In systems where data packets might arrive out of order (like distributed networ
 ### Bio-Digital Interfaces (BCI): 
 Neural signals are often non-linear "clouds" of data rather than structured sentences. A "Free-Order" syntax is theoretically better suited for interpreting neural input, as it can construct meaning regardless of the sequence.
 
+### 📋 FAQ (Frequently Asked Questions)
+Q: Is this a programming language like Python or Java? 
+A: No. It is a Data Serialization Protocol (like JSON or XML). It is a way to "package" information so it can be sent between systems with zero wasted space.
+
+Q: Why use suffixes instead of word order? 
+A: Because word order is "fragile". If a data packet arrives out of sequence in a low-bandwidth environment, a positional system breaks. By using Morphological Tagging (suffixes), every piece of data carries its own "ID badge". You can scramble the order and the meaning stays 100% intact.
+
+Q: What is the benefit of splitting Identity (.p) and State (.t)? 
+A: Efficiency. In standard coding, you often re-send static data over and over. In Free-Order Logic, you establish the Permanent Identity (.p) once, then only stream the Volatile State (.t) updates. This saves massive amounts of bandwidth for IoT and high-latency systems.
+
 ### 🚧 Project Status
 
 This is currently a Language Specification (Design Document). There is no compiler yet. I welcome feedback on the logical consistency of the suffix system!
