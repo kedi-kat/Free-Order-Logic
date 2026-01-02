@@ -6,6 +6,7 @@ A minimalist logic design using Turkish morphology for free word order and stric
 > I am a linguistics enthusiast, not a professional compiler engineer. This project is a concept design exploring how Turkish grammar rules (agglutinative morphology) could be applied to code logic to make it smaller and more efficient. I am sharing this spec to get feedback on the logic, not to present a finished software product.
 
 ---
+<img width="2816" height="1536" alt="1767312218042" src="https://github.com/user-attachments/assets/600b9802-4ceb-4fa4-9232-9a7c295cddfe" />
 
 ## 💡 The Core Problem
 In traditional programming, scope and relationship are defined by **position**.
