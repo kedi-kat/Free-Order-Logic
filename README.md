@@ -94,6 +94,18 @@ The Problem: Traditional file systems force an item to be in only one "Folder" a
 
 The Solution: This logic treats location as an attribute. A single file can possess Work.tag, 2025.tag, and Ideas.tag simultaneously, allowing it to exist in multiple places without duplication.
 
+### 4. Legal Smart Contracts
+A contract clause stating that subletting is strictly forbidden (Negated).
+`Tenant.s  Property.o  Sublet.neg  Consent.t  Required.t`
+
+### 5. Supply Chain Logistics
+Tracking a container that is currently being inspected at a specific port location.
+`Container_X.s  Port_Rotterdam.l  Customs.o  Inspect.t  Flagged.t`
+
+### 6. Offline Hospital Triage
+A field nurse logs a patient with a critical penicillin allergy while the tablet is offline.
+`Patient_45.s  Conscious.t  Pulse_Weak.t  Penicillin.neg  Morphine.o  Administered.t`
+
 ### 🔮 Theoretical Domains
 The logic of Hard Links and State Separation was designed with specific high-stakes environments in mind:
 
@@ -105,6 +117,10 @@ In systems where data packets might arrive out of order (like distributed networ
 
 ### Bio-Digital Interfaces (BCI): 
 Neural signals are often non-linear "clouds" of data rather than structured sentences. A "Free-Order" syntax is theoretically better suited for interpreting neural input, as it can construct meaning regardless of the sequence.
+
+### Quantum Computing
+Modeling a qubit in "superposition" (spinning Up and Down at the same time) before it is measured.
+`Qubit_Alpha.s  SpinUp.t  SpinDown.t  Superposition.t`
 
 ### 📋 FAQ (Frequently Asked Questions)
 Q: Is this a programming language like Python or Java? 
