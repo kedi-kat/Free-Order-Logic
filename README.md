@@ -48,8 +48,9 @@ For more complex data streams (such as network packets or precise logic), the sp
 | **.neg** | **Negation** | Inverts the meaning (Boolean NOT). |
 | **.via** | **Instrument** | The tool or method used (e.g., `Radio.via`). |
 | **.q** | **Query** | Marks the data as a question/request. |
-| **.pl** | **Plural** | Indicates a group or list (e.g., `File.pl` = Files). |
 | **.if** | **Condition** | Marks a dependency (e.g., `Error.if Stop.s`). |
+| **.dat** | **Dative** | The indirect object or recipient (e.g., `Server.dat`). |
+| **.pl** | **Plural** | Indicates a group or list (e.g., `File.pl` = Files). |
 
 > **Note:** In production environments, these text suffixes are designed to be tokenized into integers (e.g., `.s` → `0x01`) to minimize packet size and optimize transmission speed.
 ---
