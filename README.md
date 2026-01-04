@@ -18,6 +18,13 @@ This system uses suffixes (via **Dot Notation**) to "tag" arguments. This create
 
 It works like Turkish grammar: meaning is glued to the word itself, so the sentence structure can be flexible.
 
+### 🌉 The Universal Bridge (Glyph Independence)
+Free-Order Logic is designed to be **language-agnostic**.
+
+* **The "Glyphs" Don't Matter:** The specific English suffixes (`.s`, `.neg`, `.t`) are just placeholders. They can be swapped for any language's markers without changing the logic.
+* **Universal Structure:** Because the system relies on *agglutinative morphology* rather than word order, the logic remains consistent across cultures.
+* **The Result:** A developer in Tokyo and a developer in Istanbul can understand the same data packet's intent, even if they do not share a spoken language. The *logic* acts as the bridge.
+
 ### Standard Suffix Codes (Basic)
 The system uses the following short codes to define roles:
 
