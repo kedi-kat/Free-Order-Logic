@@ -51,8 +51,7 @@ For more complex data streams (such as network packets or precise logic), the sp
 | **.pl** | **Plural** | Indicates a group or list (e.g., `File.pl` = Files). |
 | **.if** | **Condition** | Marks a dependency (e.g., `Error.if Stop.s`). |
 
-
-
+> **Note:** In production environments, these text suffixes are designed to be tokenized into integers (e.g., `.s` → `0x01`) to minimize packet size and optimize transmission speed.
 ---
 
 ## 📝 Logic Examples
