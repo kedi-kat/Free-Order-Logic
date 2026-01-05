@@ -51,6 +51,7 @@ For more complex data streams (such as network packets or precise logic), the sp
 | **.if** | **Condition** | Marks a dependency (e.g., `Error.if Stop.s`). |
 | **.dat** | **Dative** | The indirect object or recipient (e.g., `Server.dat`). |
 | **.pl** | **Plural** | Indicates a group or list (e.g., `File.pl` = Files). |
+| **.hz** | **Frequency** | The pitch or modulation of the signal (e.g., `Click.hz`). |
 
 > **Note:** In production environments, these text suffixes are designed to be tokenized into integers (e.g., `.s` → `0x01`) to minimize packet size and optimize transmission speed.
 ---
