@@ -72,14 +72,22 @@ Efficiency: In a data stream, you only need to send .p once.
 
 Updates: You can continue sending tiny .t updates (e.g., Happy.t, Sleeping.t) without wasting bandwidth reiterating that the dog is brown.
 
-### 2. The "Telescope" Example (Nesting)
-Standard Logic: I saw a Man who was holding a Telescope.
+## 2. The "Telescope" Example (Solving Ambiguity)
 
-Free-Order Logic:
-```text
-Man.o Telescope.i Saw.s
-```
-The .i suffix locks the Telescope to the Man. Even if the text is scrambled to Telescope.i Saw.s Man.o, the logic holds.
+**The Problem:** Standard English is *ambiguous*. The sentence *"I saw the man with the telescope"* confuses computers. Did I use a telescope to see him? Or did I see a man who owns a telescope?
+
+**The Solution:** FOL uses suffixes to lock the meaning to the word, creating mathematical certainty.
+
+### Scenario A: The Telescope is the Instrument
+`Man.o Telescope.i`
+*(Translation: I used the telescope as an instrument to see him.)*
+
+### Scenario B: The Telescope is a Property of the Man
+`[Man Telescope.p].o`
+*(Translation: The man with the telescope was seen by me.)*
+
+**Why this matters:** By removing the ambiguity at the data level, the computer doesn't need to "guess" the context. It saves processing power and prevents logical errors in complex systems.
+
 
 ### 🎮 Practical & Everyday Applications
 Beyond theory, this design offers immediate solutions for software optimization:
