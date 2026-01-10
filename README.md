@@ -18,6 +18,35 @@ This system uses suffixes (via **Dot Notation**) to "tag" arguments. This create
 
 It works like Turkish grammar: meaning is glued to the word itself, so the sentence structure can be flexible.
 
+```mermaid
+graph TD
+    subgraph OLD_WAY [THE OLD WAY: Rigid Tree]
+        direction TB
+        Root[Sentence Root] --> Verb[Verb Phrase]
+        Root --> Object[Object Phrase]
+        Verb --> V_Noun[Noun]
+        Object --> O_Noun[Noun]
+    end
+
+    subgraph FOL_WAY [THE FOL WAY: Network]
+        direction LR
+        Core((EVENT CORE))
+        Agent((Agent: Who))
+        Time((Time: When))
+        Loc((Location: Where))
+        
+        Agent --> Core
+        Time --> Core
+        Loc --> Core
+        
+        Agent -.-> Time
+    end
+    
+    style Core fill:#bbf,stroke:#333,stroke-width:4px
+    style Agent fill:#cfc,stroke:#333,stroke-width:2px
+    style Time fill:#cfc,stroke:#333,stroke-width:2px
+```
+
 ### 🌉 The Universal Bridge (Glyph Independence)
 Free-Order Logic is designed to be **language-agnostic**.
 
