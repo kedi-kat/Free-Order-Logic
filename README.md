@@ -8,6 +8,8 @@ A minimalist logic design using Turkish morphology for free word order and stric
 ---
 <img width="2816" height="1536" alt="1767312218042" src="https://github.com/user-attachments/assets/600b9802-4ceb-4fa4-9232-9a7c295cddfe" />
 
+> **Note:** Diagrams illustrate structural hierarchy. For the official visual syntax and color-coding, see the "CMYK System" section below.
+
 ## 💡 The Core Problem
 In traditional programming, scope and relationship are defined by **position**.
 * *Example:* `Parent { Child { Toy } }`
@@ -46,43 +48,17 @@ graph TD
     style Agent fill:#cfc,stroke:#333,stroke-width:2px
     style Time fill:#cfc,stroke:#333,stroke-width:2px
 ```
-# 🎨 FOL: The CMYK Syntax System
-**Free Order Logic (FOL)** uses a subtractive color model (CMYK) to map semantic relationships. By separating logic into four distinct channels, we eliminate linguistic ambiguity.
+## 🎨 Visual Syntax (CMYK)
+The FOL system maps semantic logic to four distinct channels:
 
-## 1. 🟦 CYAN (C): The Entities (Nodes)
-> "The Matter."
-* **Definition:** Physical objects, people, concepts, or nouns.
-* **Visual:** Drawn as **Circles** or **Boxes**.
-* **Examples:** `[User]`, `[Server]`, `[Whale]`, `[Idea]`.
+| Channel | Color | Role | Grammar Equiv. | Visual |
+| :--- | :--- | :--- | :--- | :--- |
+| **Entities** | 🟦 Cyan | **Nodes** | Nouns / Objects | Circles or Boxes |
+| **Relations** | 💖 Magenta | **Edges** | Verbs / Actions | Arrows |
+| **Context** | 🟡 Yellow | **Tags** | Adj / Adverbs | Highlights / Labels |
+| **Structure** | ⬛ Key | **Logic** | Scope / Negation | Black Boxes / Lines |
 
-## 2. 💖 MAGENTA (M): The Relationships (Edges)
-> "The Energy."
-* **Definition:** Actions, verbs, directional flow, or state changes.
-* **Visual:** Drawn as **Arrows** connecting Cyan nodes.
-* **Examples:** `→ (eats) →`, `→ (causes) →`, `→ (is_parent_of) →`.
-
-## 3. 🟡 YELLOW (Y): The Context (Tags)
-> "The State."
-* **Definition:** Adjectives, adverbs, timestamps, or metadata.
-* **Visual:** Highlights or small tags attached to Nodes or Edges.
-* **Examples:** `[Past_Tense]`, `[Urgent]`, `[Blue]`, `[Allegedly]`.
-
-## 4. ⬛ KEY (K): The Structure (Logic Gates)
-> "The Logic."
-* **Definition:** Scope, negation, containment, and Boolean operators.
-* **Visual:** Black ink lines, bounding boxes, and symbols.
-* **Tools:**
-    * **The Box:** Creates a "Nested Clause" (e.g., "I think that [X]").
-    * **The Strike:** Negation (NOT).
-    * **The Gate:** OR / AND junctions.
-
----
-**Why CMYK?**
-Unlike linear text, CMYK allows for **Simultaneous Processing**.
-* Scan for **Blue** to see *Who* is involved.
-* Scan for **Pink** to see *What* is happening.
-* Scan for **Yellow** to see *How* it feels.
-* Scan for **Black** to see the *Logic Structure*.
+> **Note:** Just like CMYK printing, these layers stack to create the full meaning.
 
 ### 🌉 The Universal Bridge (Glyph Independence)
 Free-Order Logic is designed to be **language-agnostic**.
