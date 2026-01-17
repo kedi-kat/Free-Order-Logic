@@ -130,7 +130,16 @@ Updates: You can continue sending tiny .t updates (e.g., Happy.t, Sleeping.t) wi
 *(Translation: The man with the telescope was seen by me.)*
 
 **Why this matters:** By removing the ambiguity at the data level, the computer doesn't need to "guess" the context. It saves processing power and prevents logical errors in complex systems.
+### ⏳ 3. Chronology (.tm)
 
+Time is treated as a coordinate, not a linear sequence. Its function changes based on what it is attached to:
+
+* **Duration (How Long):** When attached to a **State** (`.t`), `.tm` defines the length of that state.
+    * `Sleep.t` `10m.tm` → *"Sleep for 10 minutes."*
+* **Timestamp (When):** When attached to a **Command** (`.cmd`*), `.tm` defines the specific execution time.
+    * `Wake.cmd` `0800.tm` → *"Wake up at 08:00."*
+
+> *Note: Timestamps are absolute coordinates (like a meeting time), while State Durations are relative (like a timer).*
 
 ### 🎮 Practical & Everyday Applications
 Beyond theory, this design offers immediate solutions for software optimization:
