@@ -76,6 +76,8 @@ The system uses the following short codes to define roles:
 | **.o** | **Object** | The receiver of the action. |
 | **.p** | **Permanent** | Intrinsic properties (e.g., Color, Species) that **do not change**. |
 | **.t** | **Temporary** | Volatile states (e.g., Mood, Location) that **change often**. |
+| **.neg** | **Negation** | Inverts the meaning (Boolean NOT). |
+| **.void** | **Unknown / Null** | Explicitly marks missing information without causing an error (Safe Null). |
 | **.i** | **Item** | An inventory item or attribute attached to the Object. |
 | **.l** | **Location** | Where the event takes place. |
 
@@ -87,7 +89,6 @@ For more complex data streams (such as network packets or precise logic), the sp
 | **.src** | **Source** | Origin point of the data (e.g., `Mars-Rover.src`). |
 | **.dst** | **Destination** | Target recipient (e.g., `Earth-Station.dst`). |
 | **.tm** | **Time** | Timestamp or duration (e.g., `1200.tm`). |
-| **.neg** | **Negation** | Inverts the meaning (Boolean NOT). |
 | **.via** | **Instrument** | The tool or method used (e.g., `Radio.via`). |
 | **.q** | **Query** | Marks the data as a question/request. |
 | **.if** | **Condition** | Marks a dependency (e.g., `Error.if Stop.s`). |
