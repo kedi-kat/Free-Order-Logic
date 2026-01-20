@@ -12,6 +12,15 @@ A minimalist logic design using Turkish morphology for free word order and stric
 
 > **Note:** Diagrams illustrate structural hierarchy. For the official visual syntax and color-coding, see the "CMYK System" section below.
 
+## 🚀 v0.2: The "Nomad" Update
+**Logic in Motion.**
+
+Free-Order Logic (FOL) [cite: 2026-01-20] is no longer just a specification. We have released a **Reference Interpreter (`poc.py`)** that proves the viability of suffix-based state resolution.
+
+* **Run the Proof:** Use `python poc.py` to see the engine handle "scrambled" logic strings that traditional languages cannot parse.
+* **Rule Validation:** This update provides a live demonstration of **Rule #1 (Order Independence)** and **Rule #5 (Compound Suffixes)**.
+* **The Thesis:** By moving logic into the suffixes, we have successfully decoupled execution from the timeline [cite: 2026-01-20].
+
 ## 💡 The Core Problem
 In traditional programming, scope and relationship are defined by **position**.
 * *Example:* `Parent { Child { Toy } }`
@@ -161,7 +170,7 @@ Time is treated as a coordinate, not a linear sequence. Its function changes bas
 
 > *Note: Timestamps are absolute coordinates (like a meeting time), while State Durations are relative (like a timer).*
 
-### 📚 Logic Rule #4: Category Addressing
+### 📚 4. Category Addressing
 
 The system distinguishes between a specific ID and a generic Category to determine scope. Explicit "For-Loops" are not required.
 
@@ -172,7 +181,7 @@ The system distinguishes between a specific ID and a generic Category to determi
 
 > **The "God Mode" Principle:** If no unique ID is provided, the command is applied universally to the Category.
 
-### 🔗 Logic Rule #5: Compound Suffixes (Stacking)
+### 🔗 5. Compound Suffixes (Stacking)
 
 You are not limited to one suffix per word. Suffixes can be "stacked" to add layers of meaning to a single object. The system reads them from left to right.
 
@@ -258,9 +267,10 @@ Q: What is the benefit of splitting Identity (.p) and State (.t)?
 
 A: Efficiency. In standard coding, you often re-send static data over and over. In Free-Order Logic, you establish the Permanent Identity (.p) once, then only stream the Volatile State (.t) updates. This saves massive amounts of bandwidth for IoT and high-latency systems.
 
-### 🚧 Project Status
+## 🚧 Project Status: Active Prototype
+This project has graduated from a static specification to an active prototype. We now have a working **Reference Interpreter (`poc.py`)** that demonstrates the logical consistency of the suffix system in real-time. 
 
-This is currently a Language Specification (Design Document). There is no compiler yet. I welcome feedback on the logical consistency of the suffix system!
+Feedback on suffix expansion and multi-state logic is still highly encouraged!
 
 ### HNY 2026! 🥂
 
