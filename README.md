@@ -272,6 +272,10 @@ This project has graduated from a static specification to an active prototype. W
 
 Feedback on suffix expansion and multi-state logic is still highly encouraged!
 
-### HNY 2026! 🥂
+## 🛡️ License
+This project is licensed under the **GNU General Public License  v3.0 (GPLv3)**.
 
+* **You are free to:** Run, study, share, and modify the software.
+* **You must:** Disclose the source code of any modifications and license derivative works under the same GPLv3 terms.
+* **Why:** This ensures that Free-Order Logic remains open and accessible to the community.
 
