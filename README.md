@@ -41,17 +41,19 @@ FOL applies this "Nomadic Logic" to code. By moving the logic into the suffixes,
 
 ```mermaid
 graph TD
+    %% --- TOP HALF: THE OLD WAY (Fixed) ---
     subgraph OLD_WAY [THE OLD WAY: Rigid Tree]
         direction TB
-        Root[Sentence Root] --> Verb[Verb Phrase]
-        Root --> Object[Object Phrase]
-        Verb --> V_Noun[Noun]
-        Object --> O_Noun[Noun]
+        TP[Tense Phrase] --> NP_Subj[Noun Phrase<br/>Subject]
+        TP --> VP[Verb Phrase]
+        VP --> V[Verb]
+        VP --> NP_Obj[Noun Phrase<br/>Object]
     end
 
-    %% This hidden link forces the second box to stay BELOW the first one
+    %% --- SPACING HACK (Keeps top separate from bottom) ---
     OLD_WAY ~~~ FOL_WAY
 
+    %% --- BOTTOM HALF: THE FOL WAY (Your Invention) ---
     subgraph FOL_WAY [THE FOL WAY: Network]
         direction LR
         Core((EVENT CORE))
@@ -63,6 +65,15 @@ graph TD
         Agent ~~~ Time
     end
     
+    %% --- STYLING ---
+    %% Style for the Old Way (Grey/Boring/Rigid)
+    style TP fill:#333,stroke:#fff,stroke-width:2px,color:#fff
+    style NP_Subj fill:#333,stroke:#fff,stroke-width:2px,color:#fff
+    style VP fill:#333,stroke:#fff,stroke-width:2px,color:#fff
+    style V fill:#333,stroke:#fff,stroke-width:2px,color:#fff
+    style NP_Obj fill:#333,stroke:#fff,stroke-width:2px,color:#fff
+
+    %% Style for the FOL Way (Colorful/Fluid)
     style Core fill:#bbf,stroke:#333,stroke-width:4px
     style Agent fill:#cfc,stroke:#333,stroke-width:2px
     style Time fill:#cfc,stroke:#333,stroke-width:2px
