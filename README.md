@@ -29,15 +29,16 @@ In traditional programming, scope and relationship are defined by **position**.
 ## 🛠 The Solution: "Hard Links"
 This system uses suffixes (via **Dot Notation**) to "tag" arguments. This creates a hard link between data points, allowing them to exist anywhere in the stream without losing their relationship.
 
-### Why Turkish Morphology?
-Most programming languages are based on English syntax: `Subject -> Verb -> Object`. This requires strict ordering and creates "Race Conditions" when data arrives out of sequence.
+### The Motivation
+Most programming languages are based on strict syntax (like English: Subject -> Verb -> Object). This requires rigid ordering and creates "Race Conditions" when data arrives out of sequence.
 
-Free-Order Logic (FOL) is bio-inspired by the agglutinative morphology of Turkish. In Turkish, meaning is encoded in suffixes (`Root` + `Suffix` + `Suffix`), allowing the words to be placed in any order without losing meaning.
+### Bio-Inspiration: Morphological Flexibility
+Free-Order Logic (FOL) is bio-inspired by the agglutinative morphology of Turkish. While formal Turkish has a default order, meaning is fundamentally encoded in its suffixes (Root + Suffix). Because the words carry their own "tags," they can be placed in almost any order without losing their core meaning. 
 
-* **English:** "I am going to school." (Order is fixed).
-* **Turkish:** "Okula gidiyorum" OR "Gidiyorum okula." (Order is free).
+* **English (Syntax-heavy):** "I am going to school." (Order is fixed; scrambling destroys meaning).
+* **Turkish (Morphology-heavy):** "Okula gidiyorum" OR "Gidiyorum okula." (The suffix '-a' designates the destination, regardless of where the word sits).
 
-FOL applies this "Nomadic Logic" to code. By moving the logic into the suffixes, we free the syntax from the timeline.
+FOL applies this concept to swarm networks. Because the data 'tags' carry the instruction's purpose, the packet order can be entirely commutative.
 
 ```mermaid
 graph TD
